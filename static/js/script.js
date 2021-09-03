@@ -27,11 +27,13 @@ function generateCat() {
 function rpsGame(yourChoice){
     console.log(yourChoice);
     var humanChoice, botChoice;
-    //humanChoice = yourChoice.id;
+    humanChoice = yourChoice.id;
     botChoice=numberToChoice(randToRpsInt());
-    //results =decideWinner(humanChoice, botChoice);
+    console.log('Computer choice:', botChoice);
+    results =decideWinner(humanChoice, botChoice);
+    console.log(results)
     //message= finalMessage(results); 
-    rpsFrontEnd(yourChoice.id, botChoice, message);
+    //rpsFrontEnd(yourChoice.id, botChoice, message);
 }
 
 function randToRpsInt(){
@@ -49,5 +51,8 @@ function decideWinner(yourChoice, computerChoice){
      'scissors': {'paper':1, 'scissors':0.5, 'rock': 0},
     }
 
- var yourScore = rpsDatabase [yourChoice]
+ var yourScore = rpsDatabase [yourChoice][computerChoice]
+ var computerScore = rpsDatabase[computerChoice][yourChoice]
+ 
+ return [yourScore, computerScore]
 }
