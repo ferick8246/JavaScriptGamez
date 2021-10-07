@@ -72,3 +72,15 @@ function finalMessage([yourScore, computerScore]){
         return {'message': 'You won pimp!', 'color': 'green'};
     }
 }
+function rpsFrontEnd(humanImageChoice, botImageChoice,finalMessage){
+    var ImageDatabase ={
+        'rock': document.getElementById('rock').src,
+        'paper': document.getElementById('paper').src,
+        'scissors': document.getElementById('scissors').src
+    }
+// let remove all the images 
+    document.getElementById('rock').remove();
+    document.getElementById('paper').remove();
+    document.getElementById('scisors').remove();
+
+}
