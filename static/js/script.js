@@ -38,7 +38,7 @@ function rpsGame(yourChoice) {
     message= finalMessage(results); 
     console.log(message)
 
-    //rpsFrontEnd(yourChoice.id, botChoice, message);
+    rpsFrontEnd(yourChoice.id, botChoice, message);
 }
 
 function randToRpsInt() {
