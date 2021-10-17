@@ -73,7 +73,7 @@ function finalMessage([yourScore, computerScore]){
     }
 }
 function rpsFrontEnd(humanImageChoice, botImageChoice,finalMessage){
-    var ImageDatabase ={
+    var imagesDatabase ={
         'rock': document.getElementById('rock').src,
         'paper': document.getElementById('paper').src,
         'scissors': document.getElementById('scissors').src
