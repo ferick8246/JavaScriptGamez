@@ -81,7 +81,7 @@ function rpsFrontEnd(humanImageChoice, botImageChoice,finalMessage){
 // let remove all the images 
     document.getElementById('rock').remove();
     document.getElementById('paper').remove();
-    document.getElementById('scisors').remove();
+    document.getElementById('scissors').remove();
 
     var humanDiv = document.createElement('div');
     var botDiv = document.createElement('div');
