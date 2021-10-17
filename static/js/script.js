@@ -83,4 +83,9 @@ function rpsFrontEnd(humanImageChoice, botImageChoice,finalMessage){
     document.getElementById('paper').remove();
     document.getElementById('scisors').remove();
 
+    humanDiv.innerHTML ="<img src='" + imagesDatabase[humanImageChoice] + "'height=150 width150 style='box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);'>"
+    botDiv.innerHTML ="<img src='" + imagesDatabase[humanImageChoice] + "'height=150 width150 style='box-shadow: 0px 10px 50px rgba(243, 50, 24, 1);'>"
+
+    document.getElementById ('flex-box-rps-div').appendChild(humanDiv);
+    document.getElementById ('flex-box-rps-div').appendChild(botDiv);
 }
