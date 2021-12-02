@@ -96,3 +96,6 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage){
     document.getElementById ('flex-box-rps-div').appendChild(botDiv);
     
 }
+// Change the color of all buttons 
+var all_buttons = document.getElementsByTagName('button');
+console.log(all_buttons); 
