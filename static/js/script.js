@@ -101,7 +101,7 @@ var all_buttons = document.getElementsByTagName('button');
 console.log(all_buttons); 
 
 var copyAllButtons= []
-for (let i=0; i < all_buttons_length; i++) { 
+for (let i=0; i < all_buttons.length; i++) { 
     copyAllButtons.push(all_buttons[i].classList[1]);
 }
 
