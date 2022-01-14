@@ -113,7 +113,7 @@ function buttonColorChange(buttonThingy){
     } else if (buttonThingy.value === 'green'){
         buttonsGreen();
     }  else if (buttonThingy.value === 'reset'){
-        buttonsReset();
+        buttonColorReset();
     }   else if (buttonThingy.value === 'random'){
         buttonsColors();
     } 
