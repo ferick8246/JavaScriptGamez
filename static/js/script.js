@@ -146,6 +146,6 @@ function randomColor(){
     for (let i=0; i < all_buttons.length; i++) {
         let randomNumber = Math.floor(Math.random() * 4);
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
-        all_buttons.classList.add(choices[randomNumber]);
+        all_buttons[i].classList.add(choices[randomNumber]);
     }
 }
