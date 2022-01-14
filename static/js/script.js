@@ -102,8 +102,34 @@ console.log(all_buttons);
 
 var copyAllButtons= []
 for (let i=0; i < all_buttons_length; i++) { 
-    copyAllButtons.push(all_buttons[i]);
+    copyAllButtons.push(all_buttons[i].classList[1]);
 }
- console.log(copyAllButtons);
 
- 
+console.log(copyAllButtons);
+
+function buttonColorChange(buttonThingy){
+    if (buttonThingy.value === 'red') {
+        buttonsRed();
+    } else if (buttonThingy.value === 'green'){
+        buttonsGreen();
+    }  else if (buttonThingy.value === 'reset'){
+        buttonsReset();
+    }   else if (buttonThingy.value === 'random'){
+        buttonsColors();
+    } 
+}
+
+function buttonsRed() {
+    for (let i=0; i < all_buttons.lenght; i++){
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add('btn-danger');
+    }
+}
+
+function buttonsGreen() {
+    for (let i=0; i < all_buttons.lenght; i++){
+        all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+        all_buttons[i].classList.add('btn-success');
+    }
+}
+
