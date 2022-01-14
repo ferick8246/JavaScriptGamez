@@ -115,7 +115,7 @@ function buttonColorChange(buttonThingy){
     }  else if (buttonThingy.value === 'reset'){
         buttonColorReset();
     }   else if (buttonThingy.value === 'random'){
-        buttonsColors();
+        randomColors();
     } 
 }
 
